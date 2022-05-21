@@ -34,7 +34,6 @@ ANaveEnemigo1::ANaveEnemigo1()
 	FireRate = 0.1f;
 	x = 1.0f;
 	y = 0.0f;
-
 	a = 0;
 }
 

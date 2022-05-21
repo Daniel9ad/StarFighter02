@@ -33,11 +33,9 @@ AProyectil::AProyectil()
 
 	// Tiempo de vida del proyectil
 	InitialLifeSpan = 3.0f;
-
-	NumProyectiles = 0;
 }
 
-// Función para manejar el proyectil golpeando algo
+// Es llamado cuando el proyectil coliciona con algun actor
 void AProyectil::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
 	// Solo agregue impulso y destruya el proyectil si golpea a otro objeto

@@ -33,6 +33,4 @@ public:
 	/** Returns ProjectileMovement subobject **/
 	FORCEINLINE UProjectileMovementComponent* GetProyectilMovement() const { return ProyectilMovement; }
 
-protected:
-	int NumProyectiles;
 };

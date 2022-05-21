@@ -22,6 +22,7 @@ protected:
 	// Llamado cuando comienza el juego o cuando se genera
 	virtual void BeginPlay() override;
 
+	// Ayuda en el dispoaro
 	int a;
 	
 };

@@ -28,9 +28,7 @@ ANaveEnemigo2::ANaveEnemigo2()
 	FireRate = 0.1f;
 	x = 1.0f;
 	y = 0.0f;
-
 	a = 0;
-	NumProyectiles = 0;
 }
 
 

@@ -18,7 +18,6 @@ ANave::ANave()
 	//Declara la malla
 	NaveMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("NaveMesh"));
 	RootComponent = NaveMeshComponent;
-
 }
 
 // Called when the game starts or when spawned

@@ -20,15 +20,6 @@ ACapsula::ACapsula()
 	x = 0.0f;
 	vc = 200;
 	noContenido = true;
-
-
-	//InitialLifeSpan = 15.0f;
-
-	//Descripcion = CreateDefaultSubobject<UTextRenderComponent>(TEXT("Descricion"));
-	//Descripcion->SetText("V");
-	//Descripcion->SetTextRenderColor(FColor::Black);
-	//Descripcion->SetMassScale("x", 3.f);
-	//Descripcion->SetupAttachment(GetStaticMeshComponent());
 }
 
 void ACapsula::BeginPlay()

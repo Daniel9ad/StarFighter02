@@ -3,7 +3,7 @@
 /MACHINE:x64
 /SUBSYSTEM:WINDOWS
 /DEF
-/NAME:"UE4Editor-StarFighter-0042.dll"
+/NAME:"UE4Editor-StarFighter-0043.dll"
 /IGNORE:4221
 /NODEFAULTLIB
 "C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\StarFighterEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
@@ -38,4 +38,4 @@
 "C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\StarFighter.init.gen.cpp.obj"
 "C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\StarFighterGameModeBase.gen.cpp.obj"
 "C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\Default.rc2.res"
-/OUT:"C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\UE4Editor-StarFighter-0042.lib"
+/OUT:"C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\UE4Editor-StarFighter-0043.lib"
