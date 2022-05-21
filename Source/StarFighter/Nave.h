@@ -26,6 +26,9 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	//Retorna malla
+	FORCEINLINE class UStaticMeshComponent* GetMeshComponent() const { return NaveMeshComponent; }
+
 private:
 	// Declaro la malla
 	UPROPERTY(Category = Mesh, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
@@ -47,12 +50,6 @@ protected:
 	// Determina si la nave dispara
 	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
 		bool Disparo;
-
-public:
-	//Retorna malla
-	FORCEINLINE class UStaticMeshComponent* GetMeshComponent() const { return NaveMeshComponent; }
-
-protected:
 
 	// Desplazamiento desde la ubicación de los naves para generar proyectiles
 	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
