@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\StarFighter.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{6315C95D-C4DA-4194-8D1A-F15C34C2AB4B}</UniqueIdentifier>
+      <UniqueIdentifier>{2F7D59D6-CF7A-477F-9F23-4E0B08D4AA55}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\StarFighter.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,10 @@
     <None Include="..\..\Source\StarFighterEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{A7CDA7D0-ED7D-4B54-8CF0-583C46403874}</UniqueIdentifier>
+      <UniqueIdentifier>{0E11C7BD-F6F2-4E42-83A2-86BECA8B330B}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +29,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\StarFighter">
-      <UniqueIdentifier>{473600E2-F5B5-430E-AFD8-2F9D162FB4C9}</UniqueIdentifier>
+      <UniqueIdentifier>{5CF769F8-2BF7-46A0-A9D0-551770E7EED3}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\StarFighter\Bala.cpp">
       <Filter>Source\StarFighter</Filter>
@@ -81,6 +83,12 @@
       <Filter>Source\StarFighter</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\StarFighter\Nave.h">
+      <Filter>Source\StarFighter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\StarFighter\NaveEnemigaNodriza.cpp">
+      <Filter>Source\StarFighter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\StarFighter\NaveEnemigaNodriza.h">
       <Filter>Source\StarFighter</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\StarFighter\NaveEnemigo1.cpp">

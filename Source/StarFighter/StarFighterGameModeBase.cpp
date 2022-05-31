@@ -9,6 +9,7 @@
 #include "CapsulaArma.h"
 #include "NaveEnemigo1.h"
 #include "NaveEnemigo2.h"
+#include "NaveEnemigaNodriza.h"
 
 AStarFighterGameModeBase::AStarFighterGameModeBase()
 {
@@ -68,5 +69,9 @@ void AStarFighterGameModeBase::BeginPlay()
 	GetWorld()->SpawnActor<ANaveEnemigo2>(FVector(-1300.f, 200.f, 100.f), FRotator::ZeroRotator);
 	GetWorld()->SpawnActor<ANaveEnemigo1>(FVector(-1300.f, 400.f, 100.f), FRotator::ZeroRotator);
 	GetWorld()->SpawnActor<ANaveEnemigo2>(FVector(-1300.f, -200.f, 100.f), FRotator::ZeroRotator);
+
+	// Nave Nodriza
+	GetWorld()->SpawnActor<ANaveEnemigaNodriza>(FVector(300.f, 0.f, 100.f), FRotator::ZeroRotator);
+	GetWorld()->SpawnActor<ANaveEnemigaNodriza>(FVector(500.f, 0.f, 100.f), FRotator::ZeroRotator);
 }
 	

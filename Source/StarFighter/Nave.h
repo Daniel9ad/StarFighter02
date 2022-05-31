@@ -60,7 +60,7 @@ protected:
 		float FireRate;
 
 	// Mango para una gestión eficiente del temporizador ShotTimerExpired
-	FTimerHandle TimerHandle_ShotTimerExpired;
+		FTimerHandle TimerHandle_ShotTimerExpired;
 
 	// Valores para la direccion del disparo
 	float x;
