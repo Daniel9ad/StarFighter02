@@ -50,17 +50,9 @@ protected:
 	// Determina si la nave dispara
 	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
 		bool Disparo;
-
 	// Desplazamiento desde la ubicación de los naves para generar proyectiles
 	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
 		FVector GunOffset;
-
-	// Qué tan rápido disparará el arma
-	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
-		float FireRate;
-
-	// Mango para una gestión eficiente del temporizador ShotTimerExpired
-		FTimerHandle TimerHandle_ShotTimerExpired;
 
 	// Valores para la direccion del disparo
 	float x;

@@ -4,7 +4,10 @@
 #include "NaveEnemigaNodriza.h"
 #include "Kismet/GameplayStatics.h"
 #include "Misil.h"
+#include "Bomba.h"
+#include "Bala.h"
 
+#define print(text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 6.f, FColor::Green, text)
 
 ANaveEnemigaNodriza::ANaveEnemigaNodriza()
 {
@@ -16,6 +19,7 @@ ANaveEnemigaNodriza::ANaveEnemigaNodriza()
 	GetMeshComponent()->SetStaticMesh(MeshAsset.Object);
 	GetMeshComponent()->SetMaterial(0, MaterialAsset.Object);
 	GetMeshComponent()->SetMobility(EComponentMobility::Movable);
+	GetMeshComponent()->SetRelativeScale3D_Direct(FVector(3.f, 3.f, 3.f));
 	SetActorEnableCollision(true);
 
 	// Propiedades Nave
@@ -27,8 +31,7 @@ ANaveEnemigaNodriza::ANaveEnemigaNodriza()
 
 	// Armamento
 	GunOffset = FVector(90.f, 0.f, 0.f);
-	FireRate = 0.1f;
-	x = 1.0f;
+	x = 0.0f;
 	y = 0.0f;
 	a = 0;
 
@@ -65,16 +68,17 @@ void ANaveEnemigaNodriza::DisparoNave()
 		// Create fire direction vector
 		const FVector FireDirection = FVector(x, y, 0.f).GetClampedToMaxSize(1.0f);
 		const FRotator FireRotation = FireDirection.Rotation();
-		const FVector SpawnLocation = GetActorLocation() + FireRotation.RotateVector(GunOffset);
 
 		UWorld* const World = GetWorld();
 		if (World != nullptr)
 		{
-			World->SpawnActor<AMisil>(SpawnLocation, FireRotation);
-			NumProyectiles++;
+			World->SpawnActor<AMisil>(GetActorLocation() + FireRotation.RotateVector(FVector(220.f, 0.f, 0.f)), FRotator(0.f, 0.f, 0.f));
+			World->SpawnActor<AMisil>(GetActorLocation() + FireRotation.RotateVector(FVector(40.f, 220.f, 0.f)), FRotator(0.f, 45.f, 0.f));
+			World->SpawnActor<AMisil>(GetActorLocation() + FireRotation.RotateVector(FVector(-40.f, 220.f, 0.f)), FRotator(0.f, 135.f, 0.f));
+			World->SpawnActor<AMisil>(GetActorLocation() + FireRotation.RotateVector(FVector(-220.f, 0.f, 0.f)), FRotator(0.f, 180.f, 0.f));
+			World->SpawnActor<AMisil>(GetActorLocation() + FireRotation.RotateVector(FVector(-40.f, -220.f, 0.f)), FRotator(0.f, 225.f, 0.f));
+			World->SpawnActor<AMisil>(GetActorLocation() + FireRotation.RotateVector(FVector(40.f, -220.f, 0.f)), FRotator(0.f, 315.f, 0.f));
 		}
-
-		World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, FireRate, true);
 	}
 }
 

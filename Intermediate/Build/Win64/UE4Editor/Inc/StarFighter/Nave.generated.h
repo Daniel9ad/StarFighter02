@@ -65,8 +65,7 @@ public: \
 	FORCEINLINE static uint32 __PPO__NumVidas() { return STRUCT_OFFSET(ANave, NumVidas); } \
 	FORCEINLINE static uint32 __PPO__ResEstructura() { return STRUCT_OFFSET(ANave, ResEstructura); } \
 	FORCEINLINE static uint32 __PPO__Disparo() { return STRUCT_OFFSET(ANave, Disparo); } \
-	FORCEINLINE static uint32 __PPO__GunOffset() { return STRUCT_OFFSET(ANave, GunOffset); } \
-	FORCEINLINE static uint32 __PPO__FireRate() { return STRUCT_OFFSET(ANave, FireRate); }
+	FORCEINLINE static uint32 __PPO__GunOffset() { return STRUCT_OFFSET(ANave, GunOffset); }
 
 
 #define StarFighter_Source_StarFighter_Nave_h_9_PROLOG

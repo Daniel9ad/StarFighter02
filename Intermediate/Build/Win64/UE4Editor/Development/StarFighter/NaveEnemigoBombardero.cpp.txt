@@ -1,0 +1,9 @@
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\Definitions.StarFighter.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\NaveEnemigoBombardero.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Builder.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Builder.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\NaveEnemigoBombardero.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\NaveEnemiga.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Nave.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Nave.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\NaveEnemiga.generated.h

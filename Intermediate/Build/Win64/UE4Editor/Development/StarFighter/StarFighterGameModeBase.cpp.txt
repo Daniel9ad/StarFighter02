@@ -17,9 +17,5 @@ C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\CapsulaVida.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\CapsulaVida.generated.h
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\CapsulaArma.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\CapsulaArma.generated.h
-C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\NaveEnemigo1.h
-C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\NaveEnemigo1.generated.h
-C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\NaveEnemigo2.h
-C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\NaveEnemigo2.generated.h
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\NaveEnemigaNodriza.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\NaveEnemigaNodriza.generated.h

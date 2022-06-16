@@ -7,8 +7,6 @@
 #include "CapsulaVelocidad.h"
 #include "CapsulaVida.h"
 #include "CapsulaArma.h"
-#include "NaveEnemigo1.h"
-#include "NaveEnemigo2.h"
 #include "NaveEnemigaNodriza.h"
 
 AStarFighterGameModeBase::AStarFighterGameModeBase()
@@ -20,6 +18,7 @@ void AStarFighterGameModeBase::BeginPlay()
 {
 	Super::BeginPlay();
 	//Retorna una capsula puesta en el mundo
+	/*
 	capsulaV1 = GetWorld()->SpawnActor<ACapsulaVelocidad>(FVector(1300.0f, -400.0f, 100.0f), FRotator::ZeroRotator);
 	capsulaV1->Velocidad = 2.f;
 	capsulaV1->Vidas = 0;
@@ -64,14 +63,8 @@ void AStarFighterGameModeBase::BeginPlay()
 	capsulaA3->Velocidad = 1.f;
 	capsulaA3->Vidas = 0;
 	capsulaA3->Armamento = 2;
-
-	GetWorld()->SpawnActor<ANaveEnemigo1>(FVector(-1300.f, 0.f, 100.f), FRotator::ZeroRotator);
-	GetWorld()->SpawnActor<ANaveEnemigo2>(FVector(-1300.f, 200.f, 100.f), FRotator::ZeroRotator);
-	GetWorld()->SpawnActor<ANaveEnemigo1>(FVector(-1300.f, 400.f, 100.f), FRotator::ZeroRotator);
-	GetWorld()->SpawnActor<ANaveEnemigo2>(FVector(-1300.f, -200.f, 100.f), FRotator::ZeroRotator);
-
-	// Nave Nodriza
-	GetWorld()->SpawnActor<ANaveEnemigaNodriza>(FVector(300.f, 0.f, 100.f), FRotator::ZeroRotator);
-	GetWorld()->SpawnActor<ANaveEnemigaNodriza>(FVector(500.f, 0.f, 100.f), FRotator::ZeroRotator);
+	*/
+	// Crea una nave nodriza
+	GetWorld()->SpawnActor<ANaveEnemigaNodriza>(FVector(500.0f, 0.0f, 200.0f), FRotator(0.f,0.f,0.f));
 }
 	

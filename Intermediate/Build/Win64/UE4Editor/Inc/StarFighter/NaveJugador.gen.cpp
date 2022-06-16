@@ -344,7 +344,7 @@ void EmptyLinkFunctionForGeneratedCodeNaveJugador() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANaveJugador, 3943316324);
+	IMPLEMENT_CLASS(ANaveJugador, 262042937);
 	template<> STARFIGHTER_API UClass* StaticClass<ANaveJugador>()
 	{
 		return ANaveJugador::StaticClass();

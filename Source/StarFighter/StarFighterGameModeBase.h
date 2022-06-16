@@ -15,7 +15,7 @@ public:
 	AStarFighterGameModeBase();
 
 private:
-
+	/*
 	class ACapsulaVelocidad* capsulaV1;
 	class ACapsulaVelocidad* capsulaV2;
 	class ACapsulaVelocidad* capsulaV3;
@@ -25,7 +25,7 @@ private:
 	class ACapsulaArma* capsulaA1;
 	class ACapsulaArma* capsulaA2;
 	class ACapsulaArma* capsulaA3;
-
+	*/
 protected:
 	virtual void BeginPlay() override;
 };

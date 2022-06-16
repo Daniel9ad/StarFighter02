@@ -58,7 +58,6 @@ ANaveJugador::ANaveJugador()
 
 	// Armamento
 	GunOffset = FVector(90.f, 0.f, 0.f);
-	FireRate = 0.1f;
 	x = 1.0f;
 	y = 0.0f;
 }
@@ -175,7 +174,7 @@ void ANaveJugador::FireBala()
 			NumProyectiles++;
 		}
 
-		World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, FireRate, true);
+		//World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, FireRate, true);
 	}
 }
 
@@ -194,7 +193,7 @@ void ANaveJugador::FireMisil()
 			NumProyectiles++;
 		}
 
-		World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, FireRate, true);
+		//World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, FireRate, true);
 	}
 }
 
@@ -213,7 +212,7 @@ void ANaveJugador::FireBomba()
 			NumProyectiles++;
 		}
 
-		World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, FireRate, true);
+		//World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, FireRate, true);
 	}
 }
 
