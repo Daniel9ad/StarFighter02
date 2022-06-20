@@ -30,9 +30,6 @@ AProyectil::AProyectil()
 	ProyectilMovement->bRotationFollowsVelocity = true;
 	ProyectilMovement->bShouldBounce = false;
 	ProyectilMovement->ProjectileGravityScale = 0.f; // No gravity
-
-	// Tiempo de vida del proyectil
-	InitialLifeSpan = 3.0f;
 }
 
 // Es llamado cuando el proyectil coliciona con algun actor

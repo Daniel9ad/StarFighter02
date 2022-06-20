@@ -14,18 +14,9 @@ class STARFIGHTER_API AStarFighterGameModeBase : public AGameModeBase
 public:
 	AStarFighterGameModeBase();
 
-private:
-	/*
-	class ACapsulaVelocidad* capsulaV1;
-	class ACapsulaVelocidad* capsulaV2;
-	class ACapsulaVelocidad* capsulaV3;
-	class ACapsulaVida* capsulaVi1;
-	class ACapsulaVida* capsulaVi2;
-	class ACapsulaVida* capsulaVi3;
-	class ACapsulaArma* capsulaA1;
-	class ACapsulaArma* capsulaA2;
-	class ACapsulaArma* capsulaA3;
-	*/
+	// Llamado a cada cuadro
+	virtual void Tick(float DeltaTime) override;
+
 protected:
 	virtual void BeginPlay() override;
 };

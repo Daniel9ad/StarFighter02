@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\StarFighter.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{8B3B8C8E-ACEB-4018-B027-861EF60BED8E}</UniqueIdentifier>
+      <UniqueIdentifier>{AD72DD61-89A5-41B4-841F-EEBE022228D9}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\StarFighter.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{20D1E262-6B91-4167-A68F-2CBE6BDD5019}</UniqueIdentifier>
+      <UniqueIdentifier>{3046C8FC-6D0A-4142-9850-01590C11F6DA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -29,7 +29,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\StarFighter">
-      <UniqueIdentifier>{4F3C3FB8-0745-404D-85A4-45C71E14A3AE}</UniqueIdentifier>
+      <UniqueIdentifier>{28FE1674-7365-464D-94C6-D3FD0F41F368}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\StarFighter\Bala.cpp">
       <Filter>Source\StarFighter</Filter>
@@ -73,16 +73,34 @@
     <ClInclude Include="..\..\Source\StarFighter\CapsulaArma.h">
       <Filter>Source\StarFighter</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\StarFighter\CapsulaArma2.cpp">
+      <Filter>Source\StarFighter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\StarFighter\CapsulaArma2.h">
+      <Filter>Source\StarFighter</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\StarFighter\CapsulaVelocidad.cpp">
       <Filter>Source\StarFighter</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\StarFighter\CapsulaVelocidad.h">
       <Filter>Source\StarFighter</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\StarFighter\CapsulaVelocidad2.cpp">
+      <Filter>Source\StarFighter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\StarFighter\CapsulaVelocidad2.h">
+      <Filter>Source\StarFighter</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\StarFighter\CapsulaVida.cpp">
       <Filter>Source\StarFighter</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\StarFighter\CapsulaVida.h">
+      <Filter>Source\StarFighter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\StarFighter\CapsulaVida2.cpp">
+      <Filter>Source\StarFighter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\StarFighter\CapsulaVida2.h">
       <Filter>Source\StarFighter</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\StarFighter\ConstructorNaves.cpp">
@@ -109,6 +127,36 @@
     <ClInclude Include="..\..\Source\StarFighter\EscuadronNaveCaza.h">
       <Filter>Source\StarFighter</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\StarFighter\GeneradorCapsulas.cpp">
+      <Filter>Source\StarFighter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\StarFighter\GeneradorCapsulas.h">
+      <Filter>Source\StarFighter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\StarFighter\GeneradorCapsulasArma.cpp">
+      <Filter>Source\StarFighter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\StarFighter\GeneradorCapsulasArma.h">
+      <Filter>Source\StarFighter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\StarFighter\GeneradorCapsulasVelocidad.cpp">
+      <Filter>Source\StarFighter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\StarFighter\GeneradorCapsulasVelocidad.h">
+      <Filter>Source\StarFighter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\StarFighter\GeneradorCapsulasVida.cpp">
+      <Filter>Source\StarFighter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\StarFighter\GeneradorCapsulasVida.h">
+      <Filter>Source\StarFighter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\StarFighter\InterfaceSLMB.cpp">
+      <Filter>Source\StarFighter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\StarFighter\InterfaceSLMB.h">
+      <Filter>Source\StarFighter</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\StarFighter\InventoryComponent.cpp">
       <Filter>Source\StarFighter</Filter>
     </ClCompile>
@@ -119,6 +167,12 @@
       <Filter>Source\StarFighter</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\StarFighter\Misil.h">
+      <Filter>Source\StarFighter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\StarFighter\MisilBalistico.cpp">
+      <Filter>Source\StarFighter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\StarFighter\MisilBalistico.h">
       <Filter>Source\StarFighter</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\StarFighter\Nave.cpp">
@@ -161,6 +215,24 @@
       <Filter>Source\StarFighter</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\StarFighter\Proyectil.h">
+      <Filter>Source\StarFighter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\StarFighter\SLMB.cpp">
+      <Filter>Source\StarFighter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\StarFighter\SLMB.h">
+      <Filter>Source\StarFighter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\StarFighter\SLMBAdapter.cpp">
+      <Filter>Source\StarFighter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\StarFighter\SLMBAdapter.h">
+      <Filter>Source\StarFighter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\StarFighter\SLMisilBalistico.cpp">
+      <Filter>Source\StarFighter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\StarFighter\SLMisilBalistico.h">
       <Filter>Source\StarFighter</Filter>
     </ClInclude>
     <None Include="..\..\Source\StarFighter\StarFighter.Build.cs">

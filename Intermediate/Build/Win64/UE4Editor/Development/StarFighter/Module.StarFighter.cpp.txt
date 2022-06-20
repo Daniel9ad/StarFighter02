@@ -1,0 +1,74 @@
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\Definitions.StarFighter.h
+C:/Users/44792/Pro_Unreal/StarFighter/Source/StarFighter/Builder.cpp
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Builder.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Builder.generated.h
+C:/Users/44792/Pro_Unreal/StarFighter/Source/StarFighter/BuilderEscuadron.cpp
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\BuilderEscuadron.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\BuilderEscuadron.generated.h
+C:/Users/44792/Pro_Unreal/StarFighter/Source/StarFighter/BuilderMain.cpp
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\BuilderMain.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\BuilderMain.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\ConstructorNaves.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\ConstructorNaves.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\NaveEnemigoCaza.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\NaveEnemigoCaza.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\NaveEnemiga.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Nave.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Nave.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\NaveEnemiga.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\NaveEnemigoBombardero.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\NaveEnemigoBombardero.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\EscuadronNaveCaza.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\EscuadronNaveCaza.generated.h
+C:/Users/44792/Pro_Unreal/StarFighter/Source/StarFighter/ConstructorNaves.cpp
+C:/Users/44792/Pro_Unreal/StarFighter/Source/StarFighter/EscuadronNave.cpp
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\EscuadronNave.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\EscuadronNave.generated.h
+C:/Users/44792/Pro_Unreal/StarFighter/Source/StarFighter/EscuadronNaveBombandero.cpp
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\EscuadronNaveBombandero.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\EscuadronNaveBombandero.generated.h
+C:/Users/44792/Pro_Unreal/StarFighter/Source/StarFighter/EscuadronNaveCaza.cpp
+C:/Users/44792/Pro_Unreal/StarFighter/Source/StarFighter/InventoryComponent.cpp
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\InventoryComponent.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Capsula.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/StaticMeshActor.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\StaticMeshActor.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Capsula.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\InventoryComponent.generated.h
+C:/Users/44792/Pro_Unreal/StarFighter/Source/StarFighter/Nave.cpp
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/SpringArmComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpringArmComponent.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
+C:/Users/44792/Pro_Unreal/StarFighter/Source/StarFighter/NaveEnemiga.cpp
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Misil.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Proyectil.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Proyectil.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Misil.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Bomba.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Bomba.generated.h
+C:/Users/44792/Pro_Unreal/StarFighter/Source/StarFighter/NaveEnemigaNodriza.cpp
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\NaveEnemigaNodriza.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\NaveEnemigaNodriza.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Bala.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Bala.generated.h
+C:/Users/44792/Pro_Unreal/StarFighter/Source/StarFighter/NaveEnemigoBombardero.cpp
+C:/Users/44792/Pro_Unreal/StarFighter/Source/StarFighter/NaveEnemigoCaza.cpp
+C:/Users/44792/Pro_Unreal/StarFighter/Source/StarFighter/NaveJugador.cpp
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\NaveJugador.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\NaveJugador.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ProjectileMovementComponent.generated.h
+C:/Users/44792/Pro_Unreal/StarFighter/Source/StarFighter/StarFighter.cpp
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\StarFighter.h

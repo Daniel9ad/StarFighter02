@@ -31,9 +31,9 @@ public:
 	bool noContenido;
 
 	// Recoge las capsulas
-	virtual void PickUp();
+	void PickUp();
 	// Pone las capsulas
-	virtual void PutDown(FTransform TargetLocation);
+	void PutDown(FTransform TargetLocation);
 	// Destruye las capsulas
 	void DestruyeCapsula();
 };

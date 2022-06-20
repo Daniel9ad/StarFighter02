@@ -11,7 +11,11 @@ UCLASS()
 class STARFIGHTER_API ACapsulaVida : public ACapsula
 {
 	GENERATED_BODY()
-	
+
 public:
 	ACapsulaVida();
+
+protected:
+	// Llamado cuando comienza el juego o cuando se genera
+	virtual void BeginPlay() override;
 };

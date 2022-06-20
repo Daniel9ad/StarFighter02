@@ -1,0 +1,13 @@
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\Definitions.StarFighter.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\GeneradorCapsulasVelocidad.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Capsula.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/StaticMeshActor.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\StaticMeshActor.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Capsula.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\GeneradorCapsulas.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\GeneradorCapsulas.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\GeneradorCapsulasVelocidad.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\CapsulaVelocidad.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\CapsulaVelocidad.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\CapsulaVelocidad2.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\CapsulaVelocidad2.generated.h

@@ -18,7 +18,7 @@ ACapsula::ACapsula()
 	SetActorEnableCollision(true);
 
 	x = 0.0f;
-	vc = 200;
+	vc = 0;
 	noContenido = true;
 }
 

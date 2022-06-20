@@ -15,4 +15,6 @@ AMisil::AMisil()
 	//Establece la malla del proyectil
 	GetProyectilMesh()->SetStaticMesh(ProyectilMeshAsset.Object);
 	GetProyectilMovement()->UpdatedComponent = GetProyectilMesh();
+	// Tiempo de vida del proyectil
+	InitialLifeSpan = 3.0f;
 }

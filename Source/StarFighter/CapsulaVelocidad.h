@@ -14,4 +14,8 @@ class STARFIGHTER_API ACapsulaVelocidad : public ACapsula
 	
 public:
 	ACapsulaVelocidad();
+
+protected:
+	// Llamado cuando comienza el juego o cuando se genera
+	virtual void BeginPlay() override;
 };

@@ -13,5 +13,8 @@ class STARFIGHTER_API ACapsulaArma : public ACapsula
 
 public:
 	ACapsulaArma();
-	
+
+protected:
+	// Llamado cuando comienza el juego o cuando se genera
+	virtual void BeginPlay() override;
 };
