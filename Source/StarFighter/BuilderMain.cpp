@@ -19,6 +19,7 @@ void ABuilderMain::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	/*
 	cnaves = GetWorld()->SpawnActor<AConstructorNaves>(AConstructorNaves::StaticClass());
 	naveCaza = GetWorld()->SpawnActor<ANaveEnemigoCaza>(ANaveEnemigoCaza::StaticClass());
 	naveBombardero = GetWorld()->SpawnActor<ANaveEnemigoBombardero>(ANaveEnemigoBombardero::StaticClass());
@@ -28,7 +29,7 @@ void ABuilderMain::BeginPlay()
 
 	cnaves->setBuilder(naveBombardero);
 	cnaves->ConstruirNave(200.f, 600.f);
-
+	*/
 	//escuadronCaza = GetWorld()->SpawnActor<AEscuadronNaveCaza>(AEscuadronNaveCaza::StaticClass());
 
 	//cnaves->setBuilderEscuadron(escuadronCaza);

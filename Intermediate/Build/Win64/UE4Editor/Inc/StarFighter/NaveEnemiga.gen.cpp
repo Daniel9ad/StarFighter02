@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeNaveEnemiga() {}
 	STARFIGHTER_API UClass* Z_Construct_UClass_ANaveEnemiga();
 	STARFIGHTER_API UClass* Z_Construct_UClass_ANave();
 	UPackage* Z_Construct_UPackage__Script_StarFighter();
+	STARFIGHTER_API UClass* Z_Construct_UClass_USubscriber_NoRegister();
+	STARFIGHTER_API UClass* Z_Construct_UClass_UMorph_NoRegister();
 // End Cross Module References
 	void ANaveEnemiga::StaticRegisterNativesANaveEnemiga()
 	{
@@ -31,6 +33,7 @@ void EmptyLinkFunctionForGeneratedCodeNaveEnemiga() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -45,6 +48,10 @@ void EmptyLinkFunctionForGeneratedCodeNaveEnemiga() {}
 		{ "ModuleRelativePath", "NaveEnemiga.h" },
 	};
 #endif
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ANaveEnemiga_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_USubscriber_NoRegister, (int32)VTABLE_OFFSET(ANaveEnemiga, ISubscriber), false },
+			{ Z_Construct_UClass_UMorph_NoRegister, (int32)VTABLE_OFFSET(ANaveEnemiga, IMorph), false },
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ANaveEnemiga_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ANaveEnemiga>::IsAbstract,
 	};
@@ -55,11 +62,11 @@ void EmptyLinkFunctionForGeneratedCodeNaveEnemiga() {}
 		DependentSingletons,
 		nullptr,
 		nullptr,
-		nullptr,
+		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		0,
-		0,
+		UE_ARRAY_COUNT(InterfaceParams),
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_ANaveEnemiga_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ANaveEnemiga_Statics::Class_MetaDataParams))
 	};
@@ -72,7 +79,7 @@ void EmptyLinkFunctionForGeneratedCodeNaveEnemiga() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANaveEnemiga, 3688220684);
+	IMPLEMENT_CLASS(ANaveEnemiga, 70964199);
 	template<> STARFIGHTER_API UClass* StaticClass<ANaveEnemiga>()
 	{
 		return ANaveEnemiga::StaticClass();

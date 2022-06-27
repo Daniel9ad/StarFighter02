@@ -19,4 +19,13 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
+
+private:
+
+	class AConstructorNaves* cnaves;
+
+	class ANaveEnemiga* naveCaza1;
+	class ANaveEnemiga* naveBombardero1;
+
+	class AComandoAlertaEnemigo* ComandoAlerta1;
 };

@@ -13,28 +13,30 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define STARFIGHTER_NaveEnemiga_generated_h
 
-#define StarFighter_Source_StarFighter_NaveEnemiga_h_13_SPARSE_DATA
-#define StarFighter_Source_StarFighter_NaveEnemiga_h_13_RPC_WRAPPERS
-#define StarFighter_Source_StarFighter_NaveEnemiga_h_13_RPC_WRAPPERS_NO_PURE_DECLS
-#define StarFighter_Source_StarFighter_NaveEnemiga_h_13_INCLASS_NO_PURE_DECLS \
+#define StarFighter_Source_StarFighter_NaveEnemiga_h_16_SPARSE_DATA
+#define StarFighter_Source_StarFighter_NaveEnemiga_h_16_RPC_WRAPPERS
+#define StarFighter_Source_StarFighter_NaveEnemiga_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define StarFighter_Source_StarFighter_NaveEnemiga_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesANaveEnemiga(); \
 	friend struct Z_Construct_UClass_ANaveEnemiga_Statics; \
 public: \
 	DECLARE_CLASS(ANaveEnemiga, ANave, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/StarFighter"), NO_API) \
-	DECLARE_SERIALIZER(ANaveEnemiga)
+	DECLARE_SERIALIZER(ANaveEnemiga) \
+	virtual UObject* _getUObject() const override { return const_cast<ANaveEnemiga*>(this); }
 
 
-#define StarFighter_Source_StarFighter_NaveEnemiga_h_13_INCLASS \
+#define StarFighter_Source_StarFighter_NaveEnemiga_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesANaveEnemiga(); \
 	friend struct Z_Construct_UClass_ANaveEnemiga_Statics; \
 public: \
 	DECLARE_CLASS(ANaveEnemiga, ANave, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/StarFighter"), NO_API) \
-	DECLARE_SERIALIZER(ANaveEnemiga)
+	DECLARE_SERIALIZER(ANaveEnemiga) \
+	virtual UObject* _getUObject() const override { return const_cast<ANaveEnemiga*>(this); }
 
 
-#define StarFighter_Source_StarFighter_NaveEnemiga_h_13_STANDARD_CONSTRUCTORS \
+#define StarFighter_Source_StarFighter_NaveEnemiga_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ANaveEnemiga(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ANaveEnemiga) \
@@ -47,7 +49,7 @@ private: \
 public:
 
 
-#define StarFighter_Source_StarFighter_NaveEnemiga_h_13_ENHANCED_CONSTRUCTORS \
+#define StarFighter_Source_StarFighter_NaveEnemiga_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ANaveEnemiga(ANaveEnemiga&&); \
@@ -58,28 +60,28 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ANaveEnemiga)
 
 
-#define StarFighter_Source_StarFighter_NaveEnemiga_h_13_PRIVATE_PROPERTY_OFFSET
-#define StarFighter_Source_StarFighter_NaveEnemiga_h_10_PROLOG
-#define StarFighter_Source_StarFighter_NaveEnemiga_h_13_GENERATED_BODY_LEGACY \
+#define StarFighter_Source_StarFighter_NaveEnemiga_h_16_PRIVATE_PROPERTY_OFFSET
+#define StarFighter_Source_StarFighter_NaveEnemiga_h_13_PROLOG
+#define StarFighter_Source_StarFighter_NaveEnemiga_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	StarFighter_Source_StarFighter_NaveEnemiga_h_13_PRIVATE_PROPERTY_OFFSET \
-	StarFighter_Source_StarFighter_NaveEnemiga_h_13_SPARSE_DATA \
-	StarFighter_Source_StarFighter_NaveEnemiga_h_13_RPC_WRAPPERS \
-	StarFighter_Source_StarFighter_NaveEnemiga_h_13_INCLASS \
-	StarFighter_Source_StarFighter_NaveEnemiga_h_13_STANDARD_CONSTRUCTORS \
+	StarFighter_Source_StarFighter_NaveEnemiga_h_16_PRIVATE_PROPERTY_OFFSET \
+	StarFighter_Source_StarFighter_NaveEnemiga_h_16_SPARSE_DATA \
+	StarFighter_Source_StarFighter_NaveEnemiga_h_16_RPC_WRAPPERS \
+	StarFighter_Source_StarFighter_NaveEnemiga_h_16_INCLASS \
+	StarFighter_Source_StarFighter_NaveEnemiga_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define StarFighter_Source_StarFighter_NaveEnemiga_h_13_GENERATED_BODY \
+#define StarFighter_Source_StarFighter_NaveEnemiga_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	StarFighter_Source_StarFighter_NaveEnemiga_h_13_PRIVATE_PROPERTY_OFFSET \
-	StarFighter_Source_StarFighter_NaveEnemiga_h_13_SPARSE_DATA \
-	StarFighter_Source_StarFighter_NaveEnemiga_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	StarFighter_Source_StarFighter_NaveEnemiga_h_13_INCLASS_NO_PURE_DECLS \
-	StarFighter_Source_StarFighter_NaveEnemiga_h_13_ENHANCED_CONSTRUCTORS \
+	StarFighter_Source_StarFighter_NaveEnemiga_h_16_PRIVATE_PROPERTY_OFFSET \
+	StarFighter_Source_StarFighter_NaveEnemiga_h_16_SPARSE_DATA \
+	StarFighter_Source_StarFighter_NaveEnemiga_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	StarFighter_Source_StarFighter_NaveEnemiga_h_16_INCLASS_NO_PURE_DECLS \
+	StarFighter_Source_StarFighter_NaveEnemiga_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -4,11 +4,14 @@
 
 #include "CoreMinimal.h"
 #include "Nave.h"
+#include "Subscriber.h"
+#include "Morph.h"
+#include "ComandoAlertaEnemigo.h"
 #include "NaveEnemiga.generated.h"
 
 
 UCLASS()
-class STARFIGHTER_API ANaveEnemiga : public ANave
+class STARFIGHTER_API ANaveEnemiga : public ANave, public ISubscriber, public IMorph
 {
 	GENERATED_BODY()
 
@@ -18,22 +21,32 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	void DisparoNave();
+	virtual void Destroyed() override;
+
+public:
 
 	FORCEINLINE void setVelocidad(float v) { Velocidad = v;  }
 	FORCEINLINE void setDisparo(bool d) { Disparo = d; }
-	FORCEINLINE void setMovimiento(float mx, float my, float ma) { x = mx; y = my; a = ma; }
-	FORCEINLINE void setPropiedades(float e, float r, int v, int t) {
+	FORCEINLINE void setMovimiento(bool d) { Movimiento = d; }
+	FORCEINLINE void setPropiedades(float e, float r, int v) {
 		Energia = e;
 		ResEstructura = r;
 		NumVidas = v;
-		TipoDisparo = t;
 	}
+
+	FORCEINLINE float getVelocidad() { return Velocidad; }
+	FORCEINLINE bool getDisparo() { return Disparo; }
+	FORCEINLINE bool getMovimiento() { return Movimiento; }
 
 protected:
 	// Llamado cuando comienza el juego o cuando se genera
 	virtual void BeginPlay() override;
-	
-	int TipoDisparo;
-	int a;
+
+private:
+	class AComandoAlertaEnemigo* comandoAlerta;
+
+public:
+	virtual void Update(APublisher* publisher) override;
+	virtual void Morph();
+	void SetComandoAlerta(AComandoAlertaEnemigo* comando);
 };

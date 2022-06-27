@@ -66,4 +66,8 @@ protected:
 	
 	//Consumir capsula
 	void ConsumirCapsula();
+
+	// Para el disparo
+	int x;
+	int y;
 };

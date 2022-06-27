@@ -65,6 +65,7 @@ public: \
 	FORCEINLINE static uint32 __PPO__NumVidas() { return STRUCT_OFFSET(ANave, NumVidas); } \
 	FORCEINLINE static uint32 __PPO__ResEstructura() { return STRUCT_OFFSET(ANave, ResEstructura); } \
 	FORCEINLINE static uint32 __PPO__Disparo() { return STRUCT_OFFSET(ANave, Disparo); } \
+	FORCEINLINE static uint32 __PPO__Movimiento() { return STRUCT_OFFSET(ANave, Movimiento); } \
 	FORCEINLINE static uint32 __PPO__GunOffset() { return STRUCT_OFFSET(ANave, GunOffset); }
 
 

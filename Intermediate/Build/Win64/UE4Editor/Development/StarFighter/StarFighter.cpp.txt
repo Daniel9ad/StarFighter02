@@ -1,2 +1,0 @@
-C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\Definitions.StarFighter.h
-C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\StarFighter.h

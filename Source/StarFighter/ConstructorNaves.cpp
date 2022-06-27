@@ -32,10 +32,10 @@ void AConstructorNaves::setBuilder(AActor* newbuilder)
 	builder = Cast<IBuilder>(newbuilder);
 }
 
-//ANaveEnemiga* AConstructorNaves::getNave()
-//{
-//	return builder->getNaveG();
-//}
+ANaveEnemiga* AConstructorNaves::getNave()
+{
+	return builder->getNaveG();
+}
 
 void AConstructorNaves::ConstruirNave(float x, float y)
 {

@@ -51,15 +51,16 @@ ANaveJugador::ANaveJugador()
 	Energia = 100.0f;
 	NumVidas = 3;
 	ResEstructura = 100.0f;
-	Disparo = false;
+	Disparo = true;
+	Movimiento = true;
 
 	// Inventario
 	InventarioJugador = CreateDefaultSubobject<UInventoryComponent>("MyInventory");
 
 	// Armamento
 	GunOffset = FVector(90.f, 0.f, 0.f);
-	x = 1.0f;
-	y = 0.0f;
+	x = 1.f;
+	y = 0.f;
 }
 
 // Called when the game starts or when spawned
@@ -74,27 +75,30 @@ void ANaveJugador::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	// Obtengo los valores de entrada por teclado
-	const float VerticalValue = GetInputAxisValue(MoveVertical);
-	const float HorizontalValue = GetInputAxisValue(MoveHorizontal);
+	if (Movimiento)
+	{
+		// Obtengo los valores de entrada por teclado
+		const float VerticalValue = GetInputAxisValue(MoveVertical);
+		const float HorizontalValue = GetInputAxisValue(MoveHorizontal);
 
-	// Creo la direccion y el vector movimiento
-	const FVector MoveDirection = FVector(VerticalValue, HorizontalValue, 0.f).GetClampedToMaxSize(1.0f);
-	const FVector Movement = MoveDirection * Velocidad * DeltaTime;
-	const FRotator Rotation = Movement.Rotation();
-	FHitResult Hit(1.f);
-	// Mueve la malla
-	RootComponent->MoveComponent(Movement, Rotation, true, &Hit);
+		// Creo la direccion y el vector movimiento
+		const FVector MoveDirection = FVector(VerticalValue, HorizontalValue, 0.f).GetClampedToMaxSize(1.0f);
+		const FVector Movement = MoveDirection * Velocidad * DeltaTime;
+		const FRotator Rotation = Movement.Rotation();
+		FHitResult Hit(1.f);
+		// Mueve la malla
+		RootComponent->MoveComponent(Movement, Rotation, true, &Hit);
 
-	// Para que el disparo se realise de acuerdo al movimiento de la nave
-	if (VerticalValue != 0.0f || HorizontalValue != 0.0f) {
-		
-		if (VerticalValue != x) {
-			x = VerticalValue;
-		}
+		// Para que el disparo se realise de acuerdo al movimiento de la nave
+		if (VerticalValue != 0.0f || HorizontalValue != 0.0f) {
 
-		if (HorizontalValue != y) {
-			y = HorizontalValue;
+			if (VerticalValue != x) {
+				x = VerticalValue;
+			}
+
+			if (HorizontalValue != y) {
+				y = HorizontalValue;
+			}
 		}
 	}
 }
@@ -171,10 +175,7 @@ void ANaveJugador::FireBala()
 		if (World != nullptr)
 		{
 			World->SpawnActor<ABala>(SpawnLocation, FireRotation);
-			NumProyectiles++;
 		}
-
-		//World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, FireRate, true);
 	}
 }
 
@@ -190,10 +191,7 @@ void ANaveJugador::FireMisil()
 		if (World != nullptr)
 		{
 			World->SpawnActor<AMisil>(SpawnLocation, FireRotation);
-			NumProyectiles++;
 		}
-
-		//World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, FireRate, true);
 	}
 }
 
@@ -209,10 +207,7 @@ void ANaveJugador::FireBomba()
 		if (World != nullptr)
 		{
 			World->SpawnActor<ABomba>(SpawnLocation, FireRotation);
-			NumProyectiles++;
 		}
-
-		//World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, FireRate, true);
 	}
 }
 

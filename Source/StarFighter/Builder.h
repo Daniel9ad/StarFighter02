@@ -21,6 +21,5 @@ class STARFIGHTER_API IBuilder
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
 	virtual void buildNave(float x, float y) = 0;
-	//virtual class ANaveEnemiga* getNaveG();
-
+	virtual class ANaveEnemiga* getNaveG() = 0;
 };

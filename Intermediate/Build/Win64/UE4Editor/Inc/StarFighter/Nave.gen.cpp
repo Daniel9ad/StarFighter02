@@ -59,6 +59,11 @@ void EmptyLinkFunctionForGeneratedCodeNave() {}
 		static void NewProp_Disparo_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_Disparo;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Movimiento_MetaData[];
+#endif
+		static void NewProp_Movimiento_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_Movimiento;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GunOffset_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_GunOffset;
@@ -137,6 +142,19 @@ void EmptyLinkFunctionForGeneratedCodeNave() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ANave_Statics::NewProp_Disparo = { "Disparo", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ANave), &Z_Construct_UClass_ANave_Statics::NewProp_Disparo_SetBit, METADATA_PARAMS(Z_Construct_UClass_ANave_Statics::NewProp_Disparo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANave_Statics::NewProp_Disparo_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANave_Statics::NewProp_Movimiento_MetaData[] = {
+		{ "Category", "Gameplay" },
+		{ "Comment", "// Determina si la nave dispara\n" },
+		{ "ModuleRelativePath", "Nave.h" },
+		{ "ToolTip", "Determina si la nave dispara" },
+	};
+#endif
+	void Z_Construct_UClass_ANave_Statics::NewProp_Movimiento_SetBit(void* Obj)
+	{
+		((ANave*)Obj)->Movimiento = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ANave_Statics::NewProp_Movimiento = { "Movimiento", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ANave), &Z_Construct_UClass_ANave_Statics::NewProp_Movimiento_SetBit, METADATA_PARAMS(Z_Construct_UClass_ANave_Statics::NewProp_Movimiento_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANave_Statics::NewProp_Movimiento_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANave_Statics::NewProp_GunOffset_MetaData[] = {
 		{ "Category", "Gameplay" },
 		{ "Comment", "// Desplazamiento desde la ubicaci?n de los naves para generar proyectiles\n" },
@@ -152,6 +170,7 @@ void EmptyLinkFunctionForGeneratedCodeNave() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANave_Statics::NewProp_NumVidas,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANave_Statics::NewProp_ResEstructura,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANave_Statics::NewProp_Disparo,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANave_Statics::NewProp_Movimiento,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANave_Statics::NewProp_GunOffset,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ANave_Statics::StaticCppClassTypeInfo = {
@@ -181,7 +200,7 @@ void EmptyLinkFunctionForGeneratedCodeNave() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANave, 1543592802);
+	IMPLEMENT_CLASS(ANave, 2919109800);
 	template<> STARFIGHTER_API UClass* StaticClass<ANave>()
 	{
 		return ANave::StaticClass();

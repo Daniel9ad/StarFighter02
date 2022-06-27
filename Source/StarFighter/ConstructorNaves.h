@@ -29,7 +29,7 @@ public:
 
 	void ConstruirNave(float x, float y);
 	void setBuilder(AActor* newbuilder);
-	//class ANaveEnemiga* getNave();
+	class ANaveEnemiga* getNave();
 	void ConstruirEscuadron(float x, float y);
 	void setBuilderEscuadron(AActor* newbuilder);
 };

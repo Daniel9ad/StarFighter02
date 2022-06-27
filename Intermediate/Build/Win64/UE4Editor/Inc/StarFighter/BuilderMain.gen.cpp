@@ -17,7 +17,6 @@ void EmptyLinkFunctionForGeneratedCodeBuilderMain() {}
 	STARFIGHTER_API UClass* Z_Construct_UClass_ABuilderMain();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_StarFighter();
-	STARFIGHTER_API UClass* Z_Construct_UClass_AConstructorNaves_NoRegister();
 // End Cross Module References
 	void ABuilderMain::StaticRegisterNativesABuilderMain()
 	{
@@ -32,11 +31,6 @@ void EmptyLinkFunctionForGeneratedCodeBuilderMain() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cnaves_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_cnaves;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -50,16 +44,6 @@ void EmptyLinkFunctionForGeneratedCodeBuilderMain() {}
 		{ "ModuleRelativePath", "BuilderMain.h" },
 	};
 #endif
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuilderMain_Statics::NewProp_cnaves_MetaData[] = {
-		{ "Category", "Main" },
-		{ "ModuleRelativePath", "BuilderMain.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABuilderMain_Statics::NewProp_cnaves = { "cnaves", nullptr, (EPropertyFlags)0x0040000000020001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABuilderMain, cnaves), Z_Construct_UClass_AConstructorNaves_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABuilderMain_Statics::NewProp_cnaves_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuilderMain_Statics::NewProp_cnaves_MetaData)) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABuilderMain_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuilderMain_Statics::NewProp_cnaves,
-	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABuilderMain_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABuilderMain>::IsAbstract,
 	};
@@ -69,11 +53,11 @@ void EmptyLinkFunctionForGeneratedCodeBuilderMain() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		Z_Construct_UClass_ABuilderMain_Statics::PropPointers,
+		nullptr,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		UE_ARRAY_COUNT(Z_Construct_UClass_ABuilderMain_Statics::PropPointers),
+		0,
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_ABuilderMain_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ABuilderMain_Statics::Class_MetaDataParams))
@@ -87,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeBuilderMain() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABuilderMain, 417345411);
+	IMPLEMENT_CLASS(ABuilderMain, 2264504818);
 	template<> STARFIGHTER_API UClass* StaticClass<ABuilderMain>()
 	{
 		return ABuilderMain::StaticClass();

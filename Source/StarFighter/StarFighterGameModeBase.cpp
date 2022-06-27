@@ -9,6 +9,11 @@
 #include "GeneradorCapsulasVelocidad.h"
 #include "SLMB.h"
 #include "SLMBAdapter.h"
+#include "ConstructorNaves.h"
+#include "NaveEnemiga.h"
+#include "NaveEnemigoCaza.h"
+#include "NaveEnemigoBombardero.h"
+#include "ComandoAlertaEnemigo.h"
 
 AStarFighterGameModeBase::AStarFighterGameModeBase()
 {
@@ -51,6 +56,8 @@ void AStarFighterGameModeBase::Tick(float DeltaTime)
 		else
 			generadorVelocidad->GetCapsula("Velocidad2", FVector(x, y, 100));
 	}
+
+	ComandoAlerta1->UpdateEstadoNaveEnemigo();
 }
 
 void AStarFighterGameModeBase::BeginPlay()
@@ -59,10 +66,31 @@ void AStarFighterGameModeBase::BeginPlay()
 	// Crea una nave nodriza
 	//GetWorld()->SpawnActor<ANaveEnemigaNodriza>(FVector(500.0f, 0.0f, 200.0f), FRotator(0.f,0.f,0.f));
 	
-	ASLMB* slmb = GetWorld()->SpawnActor<ASLMB>(ASLMB::StaticClass());
-	ASLMBAdapter* slmbAdapter = GetWorld()->SpawnActor<ASLMBAdapter>(ASLMBAdapter::StaticClass());
+	// Creacion de uns SLMB con adacter 
+	//ASLMB* slmb = GetWorld()->SpawnActor<ASLMB>(ASLMB::StaticClass());
+	//ASLMBAdapter* slmbAdapter = GetWorld()->SpawnActor<ASLMBAdapter>(ASLMBAdapter::StaticClass());
 
-	slmb->SetInterfaceSLMB(slmbAdapter);
-	slmb->Disparo();
+	//slmb->SetInterfaceSLMB(slmbAdapter);
+	//slmb->Disparo();
+
+	// Creacion de naves enemigas con builder
+	cnaves = GetWorld()->SpawnActor<AConstructorNaves>(AConstructorNaves::StaticClass());
+	ANaveEnemigoCaza* navecaza = GetWorld()->SpawnActor<ANaveEnemigoCaza>(ANaveEnemigoCaza::StaticClass());
+	ANaveEnemigoBombardero* navebombardero = GetWorld()->SpawnActor<ANaveEnemigoBombardero>(ANaveEnemigoBombardero::StaticClass());
+
+	cnaves->setBuilder(navecaza);
+	cnaves->ConstruirNave(200.f, 400.f);
+	naveCaza1 = Cast<ANaveEnemiga>(cnaves->getNave());
+
+	cnaves->setBuilder(navebombardero);
+	cnaves->ConstruirNave(200.f, 600.f);
+	naveBombardero1 = Cast<ANaveEnemiga>(cnaves->getNave());
+
+	// Obserber
+	ComandoAlerta1 = GetWorld()->SpawnActor<AComandoAlertaEnemigo>(AComandoAlertaEnemigo::StaticClass());
+
+	naveCaza1->SetComandoAlerta(ComandoAlerta1);
+	naveBombardero1->SetComandoAlerta(ComandoAlerta1);
+
 }
 	

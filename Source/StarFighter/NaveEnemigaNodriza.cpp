@@ -31,8 +31,6 @@ ANaveEnemigaNodriza::ANaveEnemigaNodriza()
 
 	// Armamento
 	GunOffset = FVector(90.f, 0.f, 0.f);
-	x = 0.0f;
-	y = 0.0f;
 	a = 0;
 
 	// Tiempo de vida
@@ -66,7 +64,7 @@ void ANaveEnemigaNodriza::DisparoNave()
 	if (Disparo)
 	{
 		// Create fire direction vector
-		const FVector FireDirection = FVector(x, y, 0.f).GetClampedToMaxSize(1.0f);
+		const FVector FireDirection = FVector(0.f, 0.f, 0.f).GetClampedToMaxSize(1.0f);
 		const FRotator FireRotation = FireDirection.Rotation();
 
 		UWorld* const World = GetWorld();

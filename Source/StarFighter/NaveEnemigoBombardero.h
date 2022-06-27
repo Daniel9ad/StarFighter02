@@ -29,7 +29,11 @@ public:
 
 	// Sobrescritura de metedos
 	virtual void buildNave(float x, float y) override;
+	virtual class ANaveEnemiga* getNaveG() override;
 
 	UStaticMesh* MeshAsset;
 	UMaterialInterface* MaterialAsset;
+
+private:
+	int a;
 };

@@ -11,11 +11,10 @@ class STARFIGHTER_API ABuilderMain : public AActor
 {
 	GENERATED_BODY()
 
-	UPROPERTY(VisibleAnywhere, Category = "Main")
-	class AConstructorNaves* cnaves;
+	//class AConstructorNaves* cnaves;
 
-	class ANaveEnemigoCaza* naveCaza;
-	class ANaveEnemigoBombardero* naveBombardero;
+	//class ANaveEnemigoCaza* naveCaza;
+	//class ANaveEnemigoBombardero* naveBombardero;
 	//class AEscuadronNaveCaza* escuadronCaza;
 
 public:	

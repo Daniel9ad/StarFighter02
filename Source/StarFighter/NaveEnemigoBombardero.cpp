@@ -3,6 +3,7 @@
 
 #include "NaveEnemigoBombardero.h"
 #include "NaveEnemiga.h"
+#include "Bomba.h"
 
 // Sets default values
 ANaveEnemigoBombardero::ANaveEnemigoBombardero()
@@ -21,8 +22,7 @@ ANaveEnemigoBombardero::ANaveEnemigoBombardero()
 void ANaveEnemigoBombardero::BeginPlay()
 {
 	Super::BeginPlay();
-
-	//nave = GetWorld()->SpawnActor<ANaveEnemiga>(FVector(0.f, 100.f, 100.0f), FRotator::ZeroRotator);
+	a = 30;
 }
 
 // Called every frame
@@ -30,6 +30,28 @@ void ANaveEnemigoBombardero::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if (nave->getDisparo())
+	{
+		if (a % 30 == 0)
+		{
+			// Create fire direction vector
+			const FVector FireDirection = FVector(1.f, 0.f, 0.f).GetClampedToMaxSize(1.0f);
+			const FRotator FireRotation = FireDirection.Rotation();
+			GetWorld()->SpawnActor<ABomba>(nave->GetActorLocation() + FireRotation.RotateVector(FVector(90.f, 0.f, 0.f)), FRotator(0.f, 0.f, 0.f));
+		}
+		a++;
+	}
+
+	if (nave->getMovimiento())
+	{
+		// Creo la direccion y el vector movimiento
+		const FVector MoveDirection = FVector(1.f, 0.f, 0.f).GetClampedToMaxSize(1.0f);
+		const FVector Movement = MoveDirection * nave->getVelocidad() * DeltaTime;
+		const FRotator Rotation = Movement.Rotation();
+		FHitResult Hit(1.f);
+		// Mueve la malla
+		nave->GetMeshComponent()->MoveComponent(Movement, Rotation, true, &Hit);
+	}
 }
 
 void ANaveEnemigoBombardero::buildNave(float x, float y)
@@ -41,14 +63,15 @@ void ANaveEnemigoBombardero::buildNave(float x, float y)
 	nave->GetMeshComponent()->SetCollisionProfileName(UCollisionProfile::Pawn_ProfileName);
 	nave->GetMeshComponent()->SetMobility(EComponentMobility::Movable);
 	nave->SetActorEnableCollision(true);
-	//nave->AutoPossessAI;
 
 	nave->setVelocidad(500.0f);
-	nave->setDisparo(true);
+	nave->setDisparo(false);
+	nave->setMovimiento(false);
+	nave->setPropiedades(100.f, 100.f, 1);
+}
 
-	nave->setMovimiento(0.f, 0.f, 0);
-
-	nave->setPropiedades(100.f, 100.f, 1, 2);
-	
+ANaveEnemiga* ANaveEnemigoBombardero::getNaveG()
+{
+	return nave;
 }
 

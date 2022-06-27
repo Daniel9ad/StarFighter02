@@ -2,6 +2,7 @@
 
 #include "NaveEnemigoCaza.h"
 #include "NaveEnemiga.h"
+#include "Misil.h"
 
 // Sets default values
 ANaveEnemigoCaza::ANaveEnemigoCaza()
@@ -20,7 +21,7 @@ ANaveEnemigoCaza::ANaveEnemigoCaza()
 void ANaveEnemigoCaza::BeginPlay()
 {
 	Super::BeginPlay();
-
+	a = 30;
 }
 
 // Called every frame
@@ -28,6 +29,29 @@ void ANaveEnemigoCaza::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if (nave->getDisparo())
+	{
+		if (a % 30 == 0)
+		{
+			// Create fire direction vector
+			const FVector FireDirection = FVector(1.f, 0.f, 0.f).GetClampedToMaxSize(1.0f);
+			const FRotator FireRotation = FireDirection.Rotation();
+			GetWorld()->SpawnActor<AMisil>(nave->GetActorLocation() + FireRotation.RotateVector(FVector(90.f, -40.f, 0.f)), FRotator(0.f, 0.f, 0.f));
+			GetWorld()->SpawnActor<AMisil>(nave->GetActorLocation() + FireRotation.RotateVector(FVector(90.f, 40.f, 0.f)), FRotator(0.f, 0.f, 0.f));
+		}
+		a++;
+	}
+
+	if (nave->getMovimiento())
+	{
+		// Creo la direccion y el vector movimiento
+		const FVector MoveDirection = FVector(1.f, 0.f, 0.f).GetClampedToMaxSize(1.0f);
+		const FVector Movement = MoveDirection * nave->getVelocidad() * DeltaTime;
+		const FRotator Rotation = Movement.Rotation();
+		FHitResult Hit(1.f);
+		// Mueve la malla
+		nave->GetMeshComponent()->MoveComponent(Movement, Rotation, true, &Hit);
+	}
 }
 
 void ANaveEnemigoCaza::buildNave(float x, float y)
@@ -41,16 +65,13 @@ void ANaveEnemigoCaza::buildNave(float x, float y)
 	nave->SetActorEnableCollision(true);
 	
 	nave->setVelocidad(500.0f);
-	nave->setDisparo(true);
-
-	nave->setMovimiento(0.f, 0.f, 0);
-
-	nave->setPropiedades(100.f, 100.f, 1, 1);
-	
+	nave->setDisparo(false);
+	nave->setMovimiento(false);
+	nave->setPropiedades(100.f, 100.f, 1);
 }
-/*
+
 ANaveEnemiga* ANaveEnemigoCaza::getNaveG()
 {
 	return nave;
 }
-*/
+

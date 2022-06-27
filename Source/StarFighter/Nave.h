@@ -50,15 +50,11 @@ protected:
 	// Determina si la nave dispara
 	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
 		bool Disparo;
+	// Determina si la nave dispara
+	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
+		bool Movimiento;
 	// Desplazamiento desde la ubicación de los naves para generar proyectiles
 	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
 		FVector GunOffset;
 
-	// Valores para la direccion del disparo
-	float x;
-	float y;
-
-	// Informacion sobre el numero de proyectiles lanzados
-	int NumProyectiles;
-	void ProyectilesEn1();
 };

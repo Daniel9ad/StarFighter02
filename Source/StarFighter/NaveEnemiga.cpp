@@ -4,54 +4,53 @@
 #include "NaveEnemiga.h"
 #include "Misil.h"
 #include "Bomba.h"
+#include "ComandoAlertaEnemigo.h"
 
 ANaveEnemiga::ANaveEnemiga()
 {
-
 }
 
 void ANaveEnemiga::BeginPlay()
 {
 	Super::BeginPlay();
+	Disparo = false;
+	Movimiento = false;
+}
+
+void ANaveEnemiga::Update(APublisher* publisher)
+{
+	Morph();
+}
+
+void ANaveEnemiga::Morph()
+{
+	Disparo = comandoAlerta->Ataque;
+	Movimiento = comandoAlerta->MovimientoN;
+}
+
+void ANaveEnemiga::SetComandoAlerta(AComandoAlertaEnemigo* comando)
+{
+	if (!comando) {
+		GEngine->AddOnScreenDebugMessage(-1, 6.f, FColor::Green, FString("SetClockTower(): myClockTower is NULL, make sure it'sinitialized."));
+		return;
+	}
+	comandoAlerta = comando;
+	comandoAlerta->Subscribe(this);
 }
 
 void ANaveEnemiga::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	if (a % 30 == 0)
-		DisparoNave();
-
-	a++;
 }
 
-void ANaveEnemiga::DisparoNave()
+void ANaveEnemiga::Destroyed()
 {
-	if (Disparo)
-	{
-		// Create fire direction vector
-		const FVector FireDirection = FVector(x, y, 0.f).GetClampedToMaxSize(1.0f);
-		const FRotator FireRotation = FireDirection.Rotation();
-
-		UWorld* const World = GetWorld();
-		if (World != nullptr)
-		{
-			switch (TipoDisparo)
-			{
-			case 1: {
-				World->SpawnActor<AMisil>(GetActorLocation() + FireRotation.RotateVector(FVector(90.f, -40.f, 0.f)), FRotator(0.f, 0.f, 0.f));
-				World->SpawnActor<AMisil>(GetActorLocation() + FireRotation.RotateVector(FVector(90.f, 40.f, 0.f)), FRotator(0.f, 0.f, 0.f));
-				break;
-			}
-			case 2: {
-				World->SpawnActor<ABomba>(GetActorLocation() + FireRotation.RotateVector(FVector(90.f, 0.f, 0.f)), FRotator(0.f, 0.f, 0.f));
-				break;
-			}
-			default:
-
-				break;
-			}
-		}
+	Super::Destroyed();
+	//Log Error if its Clock Tower is NULL
+	if (!comandoAlerta) {
+		UE_LOG(LogTemp, Error, TEXT("Destroyed(): ClockTower is NULL, make sure it's initialized."));
+		return;
 	}
+	//Unsubscribe from the Clock Tower if it's destroyed
+	comandoAlerta->RemoveSubscribe(this);
 }
-
