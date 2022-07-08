@@ -19,3 +19,4 @@ C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Bomba.h
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Proyectil.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Proyectil.generated.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Bomba.generated.h
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\INCLUDE\cmath

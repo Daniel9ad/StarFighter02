@@ -57,4 +57,7 @@ protected:
 	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
 		FVector GunOffset;
 
+public:
+	FORCEINLINE void setDisparo(bool v)  { Disparo = v; }
+	FORCEINLINE void getMovimiento(bool v) { Movimiento = v; }
 };

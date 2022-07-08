@@ -2,6 +2,8 @@ C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Develop
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\NaveJugador.h
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Nave.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Nave.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\State.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\State.generated.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\NaveJugador.generated.h
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Capsula.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/StaticMeshActor.h
@@ -17,6 +19,12 @@ C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Misil.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Misil.generated.h
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Bomba.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Bomba.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\NoBattleState.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\NoBattleState.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\BattleState.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\BattleState.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\CamuflajeState.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\CamuflajeState.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/SpringArmComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpringArmComponent.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h

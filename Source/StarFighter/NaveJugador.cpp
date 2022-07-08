@@ -7,6 +7,9 @@
 #include "Bala.h"
 #include "Misil.h"
 #include "Bomba.h"
+#include "NoBattleState.h"
+#include "BattleState.h"
+#include "CamuflajeState.h"
 
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
@@ -25,11 +28,12 @@ ANaveJugador::ANaveJugador()
 {
 	// Referencias a malla y material
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> MeshAsset(TEXT("StaticMesh'/Game/Mesh/TwinStick.TwinStickUFO'"));
-	static ConstructorHelpers::FObjectFinder<UMaterialInterface> MaterialAsset(TEXT("Material'/Game/Materials/M_BlockBase.M_BlockBase'"));
+	auto material =  ConstructorHelpers::FObjectFinder<UMaterialInterface>(TEXT("Material'/Game/Materials/M_BlockBase.M_BlockBase'"));
+	MaterialAsset = material.Object;
 
 	GetMeshComponent()->SetCollisionProfileName(UCollisionProfile::Pawn_ProfileName);
 	GetMeshComponent()->SetStaticMesh(MeshAsset.Object);
-	GetMeshComponent()->SetMaterial(0, MaterialAsset.Object);
+	GetMeshComponent()->SetMaterial(0, MaterialAsset);
 	GetMeshComponent()->SetMobility(EComponentMobility::Movable);
 	SetActorEnableCollision(true);
 
@@ -68,6 +72,18 @@ void ANaveJugador::BeginPlay()
 {
 	Super::BeginPlay();
 
+	// Crea los estados
+	noBattleState = GetWorld()->SpawnActor<ANoBattleState>(ANoBattleState::StaticClass());
+	noBattleState->setNaveJugador(this);
+
+	battleState = GetWorld()->SpawnActor<ABattleState>(ABattleState::StaticClass());
+	battleState->setNaveJugador(this);
+
+	camuflajeState = GetWorld()->SpawnActor<ACamuflajeState>(ACamuflajeState::StaticClass());
+	camuflajeState->setNaveJugador(this);
+
+	// Estableciendo el primer estado
+	state = noBattleState;
 }
 
 // Called every frame
@@ -121,6 +137,8 @@ void ANaveJugador::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	PlayerInputComponent->BindAction(TEXT("FireMisil"), IE_Pressed, this, &ANaveJugador::FireMisil);
 	PlayerInputComponent->BindAction(TEXT("FireBomba"), IE_Pressed, this, &ANaveJugador::FireBomba);
 	PlayerInputComponent->BindAction(TEXT("ConsumirCapsula"), IE_Pressed, this, &ANaveJugador::ConsumirCapsula);
+	PlayerInputComponent->BindAction(TEXT("Camuflaje"), IE_Pressed, this, &ANaveJugador::ActivarCamuflaje);
+	PlayerInputComponent->BindAction(TEXT("NoBattleState"), IE_Pressed, this, &ANaveJugador::CambiarANoBattleState);
 }
 
 void ANaveJugador::NotifyHit(class UPrimitiveComponent*
@@ -163,54 +181,6 @@ void ANaveJugador::DropItem()
 	Item->PutDown(PutDownLocation);
 }
 
-void ANaveJugador::FireBala()
-{
-	if (Disparo) {
-		// Create fire direction vector
-		const FVector FireDirection = FVector(x, y, 0.f).GetClampedToMaxSize(1.0f);
-		const FRotator FireRotation = FireDirection.Rotation();
-		const FVector SpawnLocation = GetActorLocation() + FireRotation.RotateVector(GunOffset);
-
-		UWorld* const World = GetWorld();
-		if (World != nullptr)
-		{
-			World->SpawnActor<ABala>(SpawnLocation, FireRotation);
-		}
-	}
-}
-
-void ANaveJugador::FireMisil()
-{
-	if (Disparo) {
-		// Create fire direction vector
-		const FVector FireDirection = FVector(x, y, 0.f).GetClampedToMaxSize(1.0f);
-		const FRotator FireRotation = FireDirection.Rotation();
-		const FVector SpawnLocation = GetActorLocation() + FireRotation.RotateVector(GunOffset);
-
-		UWorld* const World = GetWorld();
-		if (World != nullptr)
-		{
-			World->SpawnActor<AMisil>(SpawnLocation, FireRotation);
-		}
-	}
-}
-
-void ANaveJugador::FireBomba()
-{
-	if (Disparo) {
-		// Create fire direction vector
-		const FVector FireDirection = FVector(x, y, 0.f).GetClampedToMaxSize(1.0f);
-		const FRotator FireRotation = FireDirection.Rotation();
-		const FVector SpawnLocation = GetActorLocation() + FireRotation.RotateVector(GunOffset);
-
-		UWorld* const World = GetWorld();
-		if (World != nullptr)
-		{
-			World->SpawnActor<ABomba>(SpawnLocation, FireRotation);
-		}
-	}
-}
-
 void ANaveJugador::ConsumirCapsula()
 {
 	if (InventarioJugador->InventoryCapsulas.Num() != 0) {
@@ -225,4 +195,42 @@ void ANaveJugador::ConsumirCapsula()
 		InventarioJugador->RemoveFromInventory(a);
 		a->Destroy();
 	}
+}
+
+void ANaveJugador::FireBala()
+{
+	if (Disparo) {
+		state->fireBala(x, y);
+	}
+}
+
+void ANaveJugador::FireMisil()
+{
+	if (Disparo) {
+		state->fireMisil(x,y);
+	}
+}
+
+void ANaveJugador::FireBomba()
+{
+	if (Disparo) {
+		state->fireBomba(x, y);
+	}
+}
+
+void ANaveJugador::CambiarANoBattleState()
+{
+	GetMeshComponent()->SetMaterial(0, MaterialAsset);
+	setState(getNoBattleState());
+}
+
+void ANaveJugador::ActivarCamuflaje()
+{
+	setState(getCamuflajeState());
+	state->activarCamuflaje();
+}
+
+void ANaveJugador::setState(IState* myState)
+{
+	state = myState;
 }

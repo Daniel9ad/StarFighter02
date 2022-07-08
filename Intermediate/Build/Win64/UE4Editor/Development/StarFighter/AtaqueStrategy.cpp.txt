@@ -1,0 +1,17 @@
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\Definitions.StarFighter.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\AtaqueStrategy.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\BattleNaveStrategy.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\BattleNaveStrategy.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\AtaqueStrategy.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\NaveEnemiga.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Nave.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Nave.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Subscriber.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Subscriber.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Morph.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Morph.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\ComandoAlertaEnemigo.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Publisher.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Publisher.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\ComandoAlertaEnemigo.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\NaveEnemiga.generated.h

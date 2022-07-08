@@ -45,8 +45,12 @@ protected:
 private:
 	class AComandoAlertaEnemigo* comandoAlerta;
 
+	class IBattleNaveStrategy* strategyNave;
+
 public:
 	virtual void Update(APublisher* publisher) override;
 	virtual void Morph();
 	void SetComandoAlerta(AComandoAlertaEnemigo* comando);
+
+	void AlterMeneuvers(AActor* myBattleStrategy);
 };

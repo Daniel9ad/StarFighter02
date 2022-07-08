@@ -37,4 +37,8 @@ public:
 private:
 	int a;
 
+	// Para el movimiento
+	float t;
+	float x1;
+	float y1;
 };

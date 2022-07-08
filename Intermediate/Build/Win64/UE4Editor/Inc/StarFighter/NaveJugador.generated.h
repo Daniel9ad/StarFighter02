@@ -18,24 +18,22 @@ class ACapsula;
 #endif
 #define STARFIGHTER_NaveJugador_generated_h
 
-#define StarFighter_Source_StarFighter_NaveJugador_h_12_SPARSE_DATA
-#define StarFighter_Source_StarFighter_NaveJugador_h_12_RPC_WRAPPERS \
+#define StarFighter_Source_StarFighter_NaveJugador_h_13_SPARSE_DATA
+#define StarFighter_Source_StarFighter_NaveJugador_h_13_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execEstado); \
 	DECLARE_FUNCTION(execNotifyHit); \
 	DECLARE_FUNCTION(execTakeItem); \
 	DECLARE_FUNCTION(execDropItem);
 
 
-#define StarFighter_Source_StarFighter_NaveJugador_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+#define StarFighter_Source_StarFighter_NaveJugador_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execEstado); \
 	DECLARE_FUNCTION(execNotifyHit); \
 	DECLARE_FUNCTION(execTakeItem); \
 	DECLARE_FUNCTION(execDropItem);
 
 
-#define StarFighter_Source_StarFighter_NaveJugador_h_12_INCLASS_NO_PURE_DECLS \
+#define StarFighter_Source_StarFighter_NaveJugador_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesANaveJugador(); \
 	friend struct Z_Construct_UClass_ANaveJugador_Statics; \
@@ -44,7 +42,7 @@ public: \
 	DECLARE_SERIALIZER(ANaveJugador)
 
 
-#define StarFighter_Source_StarFighter_NaveJugador_h_12_INCLASS \
+#define StarFighter_Source_StarFighter_NaveJugador_h_13_INCLASS \
 private: \
 	static void StaticRegisterNativesANaveJugador(); \
 	friend struct Z_Construct_UClass_ANaveJugador_Statics; \
@@ -53,7 +51,7 @@ public: \
 	DECLARE_SERIALIZER(ANaveJugador)
 
 
-#define StarFighter_Source_StarFighter_NaveJugador_h_12_STANDARD_CONSTRUCTORS \
+#define StarFighter_Source_StarFighter_NaveJugador_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ANaveJugador(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ANaveJugador) \
@@ -66,7 +64,7 @@ private: \
 public:
 
 
-#define StarFighter_Source_StarFighter_NaveJugador_h_12_ENHANCED_CONSTRUCTORS \
+#define StarFighter_Source_StarFighter_NaveJugador_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ANaveJugador(ANaveJugador&&); \
@@ -77,33 +75,33 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ANaveJugador)
 
 
-#define StarFighter_Source_StarFighter_NaveJugador_h_12_PRIVATE_PROPERTY_OFFSET \
+#define StarFighter_Source_StarFighter_NaveJugador_h_13_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CameraComponent() { return STRUCT_OFFSET(ANaveJugador, CameraComponent); } \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(ANaveJugador, CameraBoom); } \
 	FORCEINLINE static uint32 __PPO__InventarioJugador() { return STRUCT_OFFSET(ANaveJugador, InventarioJugador); }
 
 
-#define StarFighter_Source_StarFighter_NaveJugador_h_9_PROLOG
-#define StarFighter_Source_StarFighter_NaveJugador_h_12_GENERATED_BODY_LEGACY \
+#define StarFighter_Source_StarFighter_NaveJugador_h_10_PROLOG
+#define StarFighter_Source_StarFighter_NaveJugador_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	StarFighter_Source_StarFighter_NaveJugador_h_12_PRIVATE_PROPERTY_OFFSET \
-	StarFighter_Source_StarFighter_NaveJugador_h_12_SPARSE_DATA \
-	StarFighter_Source_StarFighter_NaveJugador_h_12_RPC_WRAPPERS \
-	StarFighter_Source_StarFighter_NaveJugador_h_12_INCLASS \
-	StarFighter_Source_StarFighter_NaveJugador_h_12_STANDARD_CONSTRUCTORS \
+	StarFighter_Source_StarFighter_NaveJugador_h_13_PRIVATE_PROPERTY_OFFSET \
+	StarFighter_Source_StarFighter_NaveJugador_h_13_SPARSE_DATA \
+	StarFighter_Source_StarFighter_NaveJugador_h_13_RPC_WRAPPERS \
+	StarFighter_Source_StarFighter_NaveJugador_h_13_INCLASS \
+	StarFighter_Source_StarFighter_NaveJugador_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define StarFighter_Source_StarFighter_NaveJugador_h_12_GENERATED_BODY \
+#define StarFighter_Source_StarFighter_NaveJugador_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	StarFighter_Source_StarFighter_NaveJugador_h_12_PRIVATE_PROPERTY_OFFSET \
-	StarFighter_Source_StarFighter_NaveJugador_h_12_SPARSE_DATA \
-	StarFighter_Source_StarFighter_NaveJugador_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	StarFighter_Source_StarFighter_NaveJugador_h_12_INCLASS_NO_PURE_DECLS \
-	StarFighter_Source_StarFighter_NaveJugador_h_12_ENHANCED_CONSTRUCTORS \
+	StarFighter_Source_StarFighter_NaveJugador_h_13_PRIVATE_PROPERTY_OFFSET \
+	StarFighter_Source_StarFighter_NaveJugador_h_13_SPARSE_DATA \
+	StarFighter_Source_StarFighter_NaveJugador_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	StarFighter_Source_StarFighter_NaveJugador_h_13_INCLASS_NO_PURE_DECLS \
+	StarFighter_Source_StarFighter_NaveJugador_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

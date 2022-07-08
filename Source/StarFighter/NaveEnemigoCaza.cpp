@@ -3,6 +3,9 @@
 #include "NaveEnemigoCaza.h"
 #include "NaveEnemiga.h"
 #include "Misil.h"
+#include <cmath>
+
+using namespace std;
 
 // Sets default values
 ANaveEnemigoCaza::ANaveEnemigoCaza()
@@ -15,6 +18,10 @@ ANaveEnemigoCaza::ANaveEnemigoCaza()
 
 	MeshAsset = mesh.Object;
 	MaterialAsset = material.Object;
+
+	t = 0.f;
+	x1 = cos(t);
+	y1 = sin(t);
 }
 
 // Called when the game starts or when spawned
@@ -45,12 +52,15 @@ void ANaveEnemigoCaza::Tick(float DeltaTime)
 	if (nave->getMovimiento())
 	{
 		// Creo la direccion y el vector movimiento
-		const FVector MoveDirection = FVector(1.f, 0.f, 0.f).GetClampedToMaxSize(1.0f);
+		const FVector MoveDirection = FVector(x1, y1, 0.f).GetClampedToMaxSize(1.0f);
 		const FVector Movement = MoveDirection * nave->getVelocidad() * DeltaTime;
 		const FRotator Rotation = Movement.Rotation();
 		FHitResult Hit(1.f);
 		// Mueve la malla
 		nave->GetMeshComponent()->MoveComponent(Movement, Rotation, true, &Hit);
+		t += 0.1f;
+		x1 = cos(t);
+		y1 = sin(t);
 	}
 }
 

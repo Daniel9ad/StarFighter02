@@ -5,6 +5,9 @@
 #include "Misil.h"
 #include "Bomba.h"
 #include "ComandoAlertaEnemigo.h"
+#include "BattleNaveStrategy.h"
+#include "AtaqueStrategy.h"
+#include "DesplazamientoStrategy.h"
 
 ANaveEnemiga::ANaveEnemiga()
 {
@@ -24,8 +27,20 @@ void ANaveEnemiga::Update(APublisher* publisher)
 
 void ANaveEnemiga::Morph()
 {
-	Disparo = comandoAlerta->Ataque;
-	Movimiento = comandoAlerta->MovimientoN;
+	if (comandoAlerta->Ataque)
+	{
+		AAtaqueStrategy* at = GetWorld()->SpawnActor<AAtaqueStrategy>(AAtaqueStrategy::StaticClass());
+		AlterMeneuvers(at);
+	}
+	if (comandoAlerta->MovimientoN)
+	{
+		ADesplazamientoStrategy* ad = GetWorld()->SpawnActor<ADesplazamientoStrategy>(ADesplazamientoStrategy::StaticClass());
+		AlterMeneuvers(ad);
+	}
+	else
+	{
+		Movimiento = comandoAlerta->MovimientoN;
+	}
 }
 
 void ANaveEnemiga::SetComandoAlerta(AComandoAlertaEnemigo* comando)
@@ -36,6 +51,12 @@ void ANaveEnemiga::SetComandoAlerta(AComandoAlertaEnemigo* comando)
 	}
 	comandoAlerta = comando;
 	comandoAlerta->Subscribe(this);
+}
+
+void ANaveEnemiga::AlterMeneuvers(AActor* myBattleStrategy)
+{
+	strategyNave = Cast<IBattleNaveStrategy>(myBattleStrategy);
+	strategyNave->Maneuver(this);
 }
 
 void ANaveEnemiga::Tick(float DeltaTime)

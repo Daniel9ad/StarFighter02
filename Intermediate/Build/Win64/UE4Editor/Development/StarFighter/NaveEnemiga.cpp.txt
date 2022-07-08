@@ -17,3 +17,9 @@ C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\Sta
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Misil.generated.h
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Bomba.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Bomba.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\BattleNaveStrategy.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\BattleNaveStrategy.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\AtaqueStrategy.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\AtaqueStrategy.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\DesplazamientoStrategy.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\DesplazamientoStrategy.generated.h
