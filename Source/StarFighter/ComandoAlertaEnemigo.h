@@ -24,5 +24,6 @@ public:
 public:
 	bool Ataque;
 	bool MovimientoN;
+	bool Amigo;
 	FVector PosicionEnemigo;
 };

@@ -66,7 +66,7 @@ void AStarFighterGameModeBase::BeginPlay()
 	// Crea una nave nodriza
 	//GetWorld()->SpawnActor<ANaveEnemigaNodriza>(FVector(500.0f, 0.0f, 200.0f), FRotator(0.f,0.f,0.f));
 	
-	// Creacion de uns SLMB con adacter 
+	// Creacion de uns SLMB con adapter 
 	//ASLMB* slmb = GetWorld()->SpawnActor<ASLMB>(ASLMB::StaticClass());
 	//ASLMBAdapter* slmbAdapter = GetWorld()->SpawnActor<ASLMBAdapter>(ASLMBAdapter::StaticClass());
 
@@ -75,22 +75,27 @@ void AStarFighterGameModeBase::BeginPlay()
 
 	// Creacion de naves enemigas con builder
 	cnaves = GetWorld()->SpawnActor<AConstructorNaves>(AConstructorNaves::StaticClass());
-	ANaveEnemigoCaza* navecaza = GetWorld()->SpawnActor<ANaveEnemigoCaza>(ANaveEnemigoCaza::StaticClass());
+	//ANaveEnemigoCaza* navecaza = GetWorld()->SpawnActor<ANaveEnemigoCaza>(ANaveEnemigoCaza::StaticClass());
 	ANaveEnemigoBombardero* navebombardero = GetWorld()->SpawnActor<ANaveEnemigoBombardero>(ANaveEnemigoBombardero::StaticClass());
+	ANaveEnemigoCaza* naveA = GetWorld()->SpawnActor<ANaveEnemigoCaza>(ANaveEnemigoCaza::StaticClass());
 
-	cnaves->setBuilder(navecaza);
-	cnaves->ConstruirNave(200.f, 400.f);
-	naveCaza1 = Cast<ANaveEnemiga>(cnaves->getNave());
+	//cnaves->setBuilder(navecaza);
+	//cnaves->ConstruirNave(200.f, 400.f);
+	//naveCaza1 = Cast<ANaveEnemiga>(cnaves->getNave());
 
 	cnaves->setBuilder(navebombardero);
 	cnaves->ConstruirNave(200.f, 600.f);
 	naveBombardero1 = Cast<ANaveEnemiga>(cnaves->getNave());
 
-	// Obserber
+	cnaves->setBuilder(naveA);
+	cnaves->ConstruirNave(200.f, 200.f);
+	naveAmigo = Cast<ANaveEnemiga>(cnaves->getNave());
+
+	// Observer
 	ComandoAlerta1 = GetWorld()->SpawnActor<AComandoAlertaEnemigo>(AComandoAlertaEnemigo::StaticClass());
 
-	naveCaza1->SetComandoAlerta(ComandoAlerta1);
+	//naveCaza1->SetComandoAlerta(ComandoAlerta1);
 	naveBombardero1->SetComandoAlerta(ComandoAlerta1);
-
+	naveAmigo->SetComandoAlerta(ComandoAlerta1);
 }
 	

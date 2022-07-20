@@ -41,6 +41,8 @@ void ANaveEnemiga::Morph()
 	{
 		Movimiento = comandoAlerta->MovimientoN;
 	}
+
+	amigo = comandoAlerta->Amigo;
 }
 
 void ANaveEnemiga::SetComandoAlerta(AComandoAlertaEnemigo* comando)

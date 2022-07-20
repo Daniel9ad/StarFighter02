@@ -43,8 +43,9 @@ protected:
 	virtual void BeginPlay() override;
 
 private:
+	//Observer
 	class AComandoAlertaEnemigo* comandoAlerta;
-
+	//Estrategy
 	class IBattleNaveStrategy* strategyNave;
 
 public:

@@ -76,7 +76,6 @@ private:
 	IState* camuflajeState;
 
 public:
-	void CambiarANoBattleState();
 	// Disparo
 	void FireBala();
 	void FireBomba();
@@ -85,10 +84,15 @@ public:
 
 	// Cambio de estado
 	void setState(IState* myState);
+	void CambiarANoBattleState();
 
 	// Accesores
 	FORCEINLINE class IState* getState() const { return state; }
 	FORCEINLINE class IState* getNoBattleState() const { return noBattleState; }
 	FORCEINLINE class IState* getBattleState() const { return battleState; }
 	FORCEINLINE class IState* getCamuflajeState() const { return camuflajeState; }
+
+	// Amigo
+	void HacerAmigo();
+	void noAmigo();
 };

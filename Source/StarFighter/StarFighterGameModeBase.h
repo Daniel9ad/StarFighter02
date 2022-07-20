@@ -24,8 +24,9 @@ private:
 
 	class AConstructorNaves* cnaves;
 
-	class ANaveEnemiga* naveCaza1;
+	//class ANaveEnemiga* naveCaza1;
 	class ANaveEnemiga* naveBombardero1;
+	class ANaveEnemiga* naveAmigo;
 
 	class AComandoAlertaEnemigo* ComandoAlerta1;
 };

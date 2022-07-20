@@ -1,11 +1,22 @@
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\Definitions.StarFighter.h
-C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/Bala.gen.cpp
+C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/AtaqueStrategy.gen.cpp
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter/AtaqueStrategy.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\BattleNaveStrategy.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\BattleNaveStrategy.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\AtaqueStrategy.generated.h
+C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/Bala.gen.cpp
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter/Bala.h
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Proyectil.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Proyectil.generated.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Bala.generated.h
+C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/BattleNaveStrategy.gen.cpp
+C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/BattleState.gen.cpp
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter/BattleState.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\State.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\State.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\BattleState.generated.h
 C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/Bomba.gen.cpp
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter/Bomba.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Bomba.generated.h
@@ -18,6 +29,9 @@ C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\Sta
 C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/BuilderMain.gen.cpp
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter/BuilderMain.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\BuilderMain.generated.h
+C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/CamuflajeState.gen.cpp
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter/CamuflajeState.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\CamuflajeState.generated.h
 C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/Capsula.gen.cpp
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter/Capsula.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/StaticMeshActor.h
@@ -49,6 +63,9 @@ C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\Sta
 C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/ConstructorNaves.gen.cpp
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter/ConstructorNaves.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\ConstructorNaves.generated.h
+C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/DesplazamientoStrategy.gen.cpp
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter/DesplazamientoStrategy.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\DesplazamientoStrategy.generated.h
 C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/EscuadronNave.gen.cpp
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter/EscuadronNave.h
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\NaveEnemigoCaza.h
@@ -102,6 +119,12 @@ C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/Sta
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter/NaveEnemigoBombardero.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\NaveEnemigoBombardero.generated.h
 C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/NaveEnemigoCaza.gen.cpp
+C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/NaveJugador.gen.cpp
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter/NaveJugador.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\NaveJugador.generated.h
+C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/NoBattleState.gen.cpp
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter/NoBattleState.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\NoBattleState.generated.h
 C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/Proyectil.gen.cpp
 C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/Publisher.gen.cpp
 C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/SLMB.gen.cpp
@@ -113,6 +136,7 @@ C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\Sta
 C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/SLMisilBalistico.gen.cpp
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter/SLMisilBalistico.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\SLMisilBalistico.generated.h
+C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/StarFighter.init.gen.cpp
 C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/StarFighterGameModeBase.gen.cpp
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter/StarFighterGameModeBase.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
@@ -120,4 +144,5 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\StarFighterGameModeBase.generated.h
+C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/State.gen.cpp
 C:/Users/44792/Pro_Unreal/StarFighter/Intermediate/Build/Win64/UE4Editor/Inc/StarFighter/Subscriber.gen.cpp

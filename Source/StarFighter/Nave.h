@@ -56,8 +56,8 @@ protected:
 	// Desplazamiento desde la ubicación de los naves para generar proyectiles
 	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
 		FVector GunOffset;
-
 public:
 	FORCEINLINE void setDisparo(bool v)  { Disparo = v; }
 	FORCEINLINE void getMovimiento(bool v) { Movimiento = v; }
+	bool amigo;
 };

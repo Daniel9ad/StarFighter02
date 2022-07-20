@@ -7,7 +7,12 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\StarFighterEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\State.cpp.obj"
+"C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\ComandoAlertaEnemigo.cpp.obj"
+"C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\NaveEnemiga.cpp.obj"
+"C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\NaveEnemigoCaza.cpp.obj"
+"C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\NaveJugador.cpp.obj"
+"C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\NoBattleState.cpp.obj"
+"C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\StarFighterGameModeBase.cpp.obj"
 "C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\Module.StarFighter.cpp.obj"
 "C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\Module.StarFighter.gen.cpp.obj"
 "C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Development\StarFighter\Default.rc2.res"

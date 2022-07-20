@@ -34,7 +34,6 @@ void ANoBattleState::setNaveJugador(ANaveJugador* nave)
 
 void ANoBattleState::fireBala(int x, int y)
 {
-
 	// Create fire direction vector
 	const FVector FireDirection = FVector(x, y, 0.f).GetClampedToMaxSize(1.0f);
 	const FRotator FireRotation = FireDirection.Rotation();

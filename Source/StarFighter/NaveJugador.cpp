@@ -41,7 +41,7 @@ ANaveJugador::ANaveJugador()
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent); // Asocia la camara con la malla
 	CameraBoom->SetUsingAbsoluteRotation(true); // La camara no girara cuando lo haga la nave
-	CameraBoom->TargetArmLength = 1000.f; // Distancia de la camara a la nave
+	CameraBoom->TargetArmLength = 1250.f; // Distancia de la camara a la nave
 	CameraBoom->SetRelativeRotation(FRotator(-80.f, 0.f, 0.f)); // Establecer la rotación del componente
 	CameraBoom->bDoCollisionTest = false; // Don't want to pull camera in when it collides with level
 
@@ -57,6 +57,7 @@ ANaveJugador::ANaveJugador()
 	ResEstructura = 100.0f;
 	Disparo = true;
 	Movimiento = true;
+	amigo = false;
 
 	// Inventario
 	InventarioJugador = CreateDefaultSubobject<UInventoryComponent>("MyInventory");
@@ -100,6 +101,9 @@ void ANaveJugador::Tick(float DeltaTime)
 		// Creo la direccion y el vector movimiento
 		const FVector MoveDirection = FVector(VerticalValue, HorizontalValue, 0.f).GetClampedToMaxSize(1.0f);
 		const FVector Movement = MoveDirection * Velocidad * DeltaTime;
+		//GEngine->AddOnScreenDebugMessage(-1, 6.f, FColor::Green, FString("x: ") + FString::SanitizeFloat(Movement.X));
+		//GEngine->AddOnScreenDebugMessage(-1, 6.f, FColor::Green, FString("y: ") + FString::SanitizeFloat(Movement.Y));
+		//GEngine->AddOnScreenDebugMessage(-1, 6.f, FColor::Green, FString("z: ") + FString::SanitizeFloat(Movement.Z));
 		const FRotator Rotation = Movement.Rotation();
 		FHitResult Hit(1.f);
 		// Mueve la malla
@@ -139,6 +143,8 @@ void ANaveJugador::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	PlayerInputComponent->BindAction(TEXT("ConsumirCapsula"), IE_Pressed, this, &ANaveJugador::ConsumirCapsula);
 	PlayerInputComponent->BindAction(TEXT("Camuflaje"), IE_Pressed, this, &ANaveJugador::ActivarCamuflaje);
 	PlayerInputComponent->BindAction(TEXT("NoBattleState"), IE_Pressed, this, &ANaveJugador::CambiarANoBattleState);
+	PlayerInputComponent->BindAction(TEXT("Amigo"), IE_Pressed, this, &ANaveJugador::HacerAmigo);
+	PlayerInputComponent->BindAction(TEXT("NoAmigo"), IE_Pressed, this, &ANaveJugador::noAmigo);
 }
 
 void ANaveJugador::NotifyHit(class UPrimitiveComponent*
@@ -233,4 +239,14 @@ void ANaveJugador::ActivarCamuflaje()
 void ANaveJugador::setState(IState* myState)
 {
 	state = myState;
+}
+
+void ANaveJugador::HacerAmigo()
+{
+	amigo = true;
+}
+
+void ANaveJugador::noAmigo()
+{
+	amigo = false;
 }

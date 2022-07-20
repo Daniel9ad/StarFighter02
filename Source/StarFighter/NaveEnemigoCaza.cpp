@@ -4,6 +4,8 @@
 #include "NaveEnemiga.h"
 #include "Misil.h"
 #include <cmath>
+#include "NaveJugador.h"
+#include "Kismet/GameplayStatics.h"
 
 using namespace std;
 
@@ -51,16 +53,42 @@ void ANaveEnemigoCaza::Tick(float DeltaTime)
 
 	if (nave->getMovimiento())
 	{
-		// Creo la direccion y el vector movimiento
-		const FVector MoveDirection = FVector(x1, y1, 0.f).GetClampedToMaxSize(1.0f);
-		const FVector Movement = MoveDirection * nave->getVelocidad() * DeltaTime;
-		const FRotator Rotation = Movement.Rotation();
-		FHitResult Hit(1.f);
-		// Mueve la malla
-		nave->GetMeshComponent()->MoveComponent(Movement, Rotation, true, &Hit);
-		t += 0.1f;
-		x1 = cos(t);
-		y1 = sin(t);
+		if (!nave->amigo)
+		{
+
+			// Creo la direccion y el vector movimiento
+			const FVector MoveDirection = FVector(x1, y1, 0.f).GetClampedToMaxSize(1.0f);
+				const FVector Movement = MoveDirection * nave->getVelocidad() * DeltaTime;
+				const FRotator Rotation = Movement.Rotation();
+				FHitResult Hit(1.f);
+				// Mueve la malla
+				nave->GetMeshComponent()->MoveComponent(Movement, Rotation, true, &Hit);
+			t += 0.1f;
+			x1 = cos(t);
+			y1 = sin(t);
+		}
+		else
+		{
+			TArray<AActor*> Nave;
+			UGameplayStatics::GetAllActorsOfClass(GetWorld(), ANaveJugador::StaticClass(), Nave);
+			FVector d(0.f, 0.f, 0.f);
+
+			for (AActor* actor : Nave)
+			{
+				ANaveJugador* naveEnemiga = Cast<ANaveJugador>(actor);
+				d = naveEnemiga->GetMeshComponent()->GetRelativeLocation();
+			}
+			d.Z = 0.f;
+			d.X = d.X / 4;
+			d.Y = d.Y * 2;
+			// Creo la direccion y el vector movimiento
+			const FVector MoveDirection = d.GetClampedToMaxSize(1.0f);
+			const FVector Movement = MoveDirection * 300.0f * DeltaTime;
+			const FRotator Rotation = Movement.Rotation();
+			FHitResult Hit(1.f);
+			// Mueve la malla
+			nave->GetMeshComponent()->MoveComponent(Movement, Rotation, true, &Hit);
+		}
 	}
 }
 
@@ -78,6 +106,7 @@ void ANaveEnemigoCaza::buildNave(float x, float y)
 	nave->setDisparo(false);
 	nave->setMovimiento(false);
 	nave->setPropiedades(100.f, 100.f, 1);
+	nave->amigo = false;
 }
 
 ANaveEnemiga* ANaveEnemigoCaza::getNaveG()

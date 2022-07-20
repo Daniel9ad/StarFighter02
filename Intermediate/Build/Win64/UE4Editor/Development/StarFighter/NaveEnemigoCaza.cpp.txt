@@ -20,3 +20,16 @@ C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Proyectil.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Proyectil.generated.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Misil.generated.h
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\INCLUDE\cmath
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\NaveJugador.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\State.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\State.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\NaveJugador.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h

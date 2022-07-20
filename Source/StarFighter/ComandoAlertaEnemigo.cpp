@@ -11,6 +11,7 @@ AComandoAlertaEnemigo::AComandoAlertaEnemigo()
 	PrimaryActorTick.bCanEverTick = true;
 	Ataque = false;
 	MovimientoN = false;
+	Amigo = false;
 }
 
 void AComandoAlertaEnemigo::BeginPlay()
@@ -43,6 +44,7 @@ void AComandoAlertaEnemigo::UpdateEstadoNaveEnemigo()
 	{
 		ANaveJugador* naveEnemiga = Cast<ANaveJugador>(actor);
 		a = naveEnemiga->GetMeshComponent()->GetRelativeLocation();
+		Amigo = naveEnemiga->amigo;
 	}
 
 	if (PosicionEnemigo != a)

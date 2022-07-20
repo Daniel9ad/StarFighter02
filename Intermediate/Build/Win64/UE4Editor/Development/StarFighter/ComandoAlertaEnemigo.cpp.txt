@@ -6,6 +6,8 @@ C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\Sta
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\NaveJugador.h
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Nave.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Nave.generated.h
+C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\State.h
+C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\State.generated.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\NaveJugador.generated.h
 C:\Users\44792\Pro_Unreal\StarFighter\Source\StarFighter\Proyectil.h
 C:\Users\44792\Pro_Unreal\StarFighter\Intermediate\Build\Win64\UE4Editor\Inc\StarFighter\Proyectil.generated.h
